@@ -3,7 +3,7 @@
     "outDir": "./dist",
     "module": "esnext",
     "target": "esnext",
-    "types": [],
+    "types": ["@types/jest"],
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
     "strict": true,
@@ -14,6 +14,6 @@
     "skipLibCheck": true,
     "lib": ["ESNext", "DOM"]
   },
-  "include": ["src"],
+  "include": ["src", "index.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
