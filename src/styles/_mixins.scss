@@ -13,10 +13,10 @@
   background-image:
     radial-gradient(variables.$radius, transparent 98%, $color),
     linear-gradient($color 0 0);
-  background-repeat: round, no-repeat;
   background-position:
     calc(variables.$radius * -1.5) calc(variables.$radius * -1.5),
     50%;
+  background-repeat: round, no-repeat;
   background-size:
     calc(variables.$radius * 3) calc(variables.$radius * 3),
     calc(100% - variables.$radius * 3) calc(100% - variables.$radius * 3);
