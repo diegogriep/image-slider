@@ -4,7 +4,7 @@
   "description": "An image slider using Canvas API",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run start",
+    "postinstall": "npm run dev",
     "dev": "webpack serve",
     "build": "webpack --mode=production",
     "test": "jest",
