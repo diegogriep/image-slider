@@ -13,6 +13,7 @@ class DrawImage {
   startX: number
   isDragging: boolean
   images: HTMLImageElement[]
+  wasInteracted: boolean
 
   constructor(canvas: HTMLCanvasElement, context: CanvasRenderingContext2D) {
     this.canvas = canvas
@@ -24,6 +25,7 @@ class DrawImage {
     this.currentX = 0
     this.currentSlide = 0
     this.images = []
+    this.wasInteracted = false
   }
 
   _drawImageAtIndex(index: number, coordinatesX: number, isPrevious = false) {
@@ -83,6 +85,10 @@ class DrawImage {
       this.startX = event.clientX - this.currentX
       this.canvas.style.cursor = 'grabbing'
       this.isDragging = true
+      if (!this.wasInteracted) {
+        this.wasInteracted = true
+        document.getElementById('instructions')!.style.display = 'none'
+      }
     })
 
     this.canvas.addEventListener('mousemove', (event) => {
