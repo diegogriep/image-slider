@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
     <title>Image Slider - Bob Marley</title>
   </head>
   <body>
     <header>
-      <h1>Bob Marley</h1>
+      <picture>
+        <img src="/assets/images/logo.png" alt="Bob Marley logo" />
+      </picture>
     </header>
 
     <main>
-      <div class="container">
+      <section class="container">
         <canvas id="slider" width="640" height="400">
           Your browser does not support the HTML5 canvas tag.
         </canvas>
-      </div>
+
+        <div id="instructions">
+          <img src="/assets/images/drag-right.svg" alt="Drag right icon" />
+
+          <p>Drag to navigate through the images.</p>
+        </div>
+      </section>
     </main>
 
     <footer>
