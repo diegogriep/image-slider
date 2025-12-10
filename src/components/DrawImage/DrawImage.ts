@@ -18,11 +18,9 @@ class DrawImage {
   constructor(canvas: HTMLCanvasElement, context: CanvasRenderingContext2D) {
     this.canvas = canvas
     this.context = context
-    this.currentSlide = 0
     this.currentX = 0
     this.startX = 0
     this.isDragging = false
-    this.currentX = 0
     this.currentSlide = 0
     this.images = []
     this.wasInteracted = false
